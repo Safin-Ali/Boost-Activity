@@ -8,7 +8,7 @@ const Aside = () => {
             {/* User Details Area */}
             <div className='user-profile'>
                 <div className='user-avatar'></div>
-                <p className='location-text'><i class="fa-duotone fa-location-dot"></i> Pabna,Bangladesh</p>
+                <p className='location-text'><i className="fa-duotone fa-location-dot"></i> Pabna,Bangladesh</p>
             </div>
             <div className='d-flex justify-content-around align-items-center user-info m-3 rounded-2'>
                 <div className='py-1'>

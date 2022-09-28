@@ -1,0 +1,37 @@
+[{
+    "name": "Brisk walking or jogging",
+    "exerciseThum": "https://i0.wp.com/blog.mypacer.com/wp-content/uploads/2019/05/jogging-path-min.jpg?resize=500%2C334&ssl=1",
+    "id": "5501",
+    "description": "help to build strong bones, as it is a weight bearing exercise,strengthen muscles.",
+    "time": 40
+}, {
+    "name": "Stair Climbing to Health",
+    "exerciseThum": "https://www.justrunlah.com/wp-content/uploads/2021/08/StairClimbing01.jpg",
+    "id": "5502",
+    "description": "It enhances heart and lung function and improves blood circulation,It reduces the risk of developing coronary heart disease, hypertension, diabetes or colon cancer.",
+    "time": 20
+}, {
+    "name": "Pushups. Drop and give me 20!",
+    "exerciseThum": "https://cdn.mos.cms.futurecdn.net/oYDbf5hQAePHEBNZTQMXRA.jpg",
+    "id": "5503",
+    "description": "Burning calories,Protecting your shoulders and lower back from injuries.",
+    "time": 15
+}, {
+    "name": "Lunges",
+    "exerciseThum": "https://media.istockphoto.com/photos/lunging-is-good-for-the-legs-picture-id1036780614?k=20&m=1036780614&s=612x612&w=0&h=bG2B5V_RZNKX1oLrKa2GCeUOsNKzKzs2ZxB8-UNvnuw=",
+    "id": "5504",
+    "description": "abdominals,back muscles,gluteal muscles,quadriceps,calves",
+    "time": 40
+}, {
+    "name": "Side planks",
+    "exerciseThum": "https://www.transformchiropractic.com/wp-content/uploads/2021/03/beginner-side-plank-exercise.jpg",
+    "id": "5505",
+    "description": "Strengthens three muscle groups at once,Protects your spine,Reduces your risk of a back injury",
+    "time": 30
+}, {
+    "name": "Dumbbell Rows",
+    "exerciseThum": "https://cdn.muscleandstrength.com/sites/default/files/field/feature-wide-image/article/9-dumbbell-row-tips-wide.jpg",
+    "id": "5506",
+    "description": "Stronger Back and Grip. The dumbbell row is a key back-building exercise for lifters, athletes, and general fitness goers alike,Improved Posture",
+    "time": 50
+}]
