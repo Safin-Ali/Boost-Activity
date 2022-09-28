@@ -32,19 +32,18 @@ aside {
 .user-info sub{
     color: #c1d6ff;
 }
-.user-info h6{
-    font-weight: 400;
-}
 .break-list,.exercise-time,.break-time,.complete-btn{
     padding: 10px 0;
 }
 .break-list .time-number {
     background: #ffffff;
     border-radius: 50%;
-    padding: 5px;
+    padding: 5px 1px;
 }
-.break-list b {
+.break-list button {
     font-size: 14px;
+    border: none;
+    background: none;
 }
 aside input:focus{
     outline: none;

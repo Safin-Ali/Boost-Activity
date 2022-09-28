@@ -3,7 +3,7 @@ import './ExerciseList.css'
 
 function ExerciseList (props) {
     const {name,description,time,exerciseThum} = props.data;
-    console.log(name)
+    const selFunc = props.selFunc;
     return(
     <div className="col-12 col-md-6 col-lg-4">
         <div className='border border-1 p-2 rounded-2'>
@@ -17,7 +17,7 @@ function ExerciseList (props) {
                 <p className='fw-semibold'>Exercise Time: <b>{time}</b> min</p>
             </div>
             <div className='text-center py-2'>
-                <button className='selectBtn'>Select Exercise</button>
+                <button onClick={()=>selFunc(time)} className='selectBtn'>Select Exercise</button>
             </div>
         </div>   
     </div>
