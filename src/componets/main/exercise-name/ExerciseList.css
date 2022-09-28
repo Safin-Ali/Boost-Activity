@@ -1,0 +1,14 @@
+.selectBtn{
+    background-color: #25316D;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 0;
+    color: #f7f1f6;
+    font-weight: 500;
+    transition: background-color .3s linear;
+}
+
+.selectBtn:hover{
+    background-color: #126599;
+}

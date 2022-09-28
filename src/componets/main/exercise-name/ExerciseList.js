@@ -1,4 +1,5 @@
 import React from 'react';
+import './ExerciseList.css'
 
 function ExerciseList (props) {
     const {name,description,time,exerciseThum} = props.data;
@@ -13,10 +14,10 @@ function ExerciseList (props) {
             <div>
                 <h2>{name}</h2>
                 <p>{description.slice(0,81)}</p>
-                <h4>{time}</h4>
+                <p className='fw-semibold'>Exercise Time: <b>{time}</b> min</p>
             </div>
-            <div>
-                <button>Select Exercise</button>
+            <div className='text-center py-2'>
+                <button className='selectBtn'>Select Exercise</button>
             </div>
         </div>   
     </div>

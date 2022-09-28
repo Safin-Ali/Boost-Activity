@@ -2,6 +2,7 @@ aside {
     min-height: 100vh;
     right: 0;
     top: 0;
+    position: sticky;
     padding: 20px 0;
 }
 .user-profile{
