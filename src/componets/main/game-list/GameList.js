@@ -4,11 +4,12 @@ import React from 'react';
 const GameList = () => {
     return (
         <div className='row g-4'>
+            <CardUI></CardUI>
         </div>
     );
 };
 
-function CartUI (props) {
+function CardUI (props) {
     return(
     <div className="col-12 col-md-6 col-lg-4">
         <div>
