@@ -6,14 +6,26 @@ import "./main.css";
 
 const Main = () => {
     // Get JSON Data
-
     const [datas,setData] = useState([]);
+
+    // Get Exercise Minutes
     const [exerMint,setExerMint] = useState(0);
+
+    // Get Exercise Minutes
+    const [brakeMint,setBreakMint] = useState(0);
 
     // Handle Exercise Time Function
     function handleExerciseTime (minutues) {
         setExerMint(exerMint+minutues)
     }
+
+    // Handle Break Time Function
+    const handleBreakTime = event => {
+        const getButtonValue = event.target.innerText;
+        const cvrtInt = parseInt(getButtonValue)
+        return setBreakMint(cvrtInt);
+    }
+
     useEffect(()=>{
         fetch('exercise.json')
         .then(res => res.json())
@@ -29,7 +41,7 @@ const Main = () => {
                 </div>
                 </div>
             <div className='col-12 col-lg-3' style={{background:'#e5f0fa'}}>
-                <Aside exerciseTime={exerMint}></Aside>
+                <Aside exerciseTime={exerMint} breakTimeFunc={handleBreakTime} breakTime={brakeMint}></Aside>
             </div>
             </section>
         </main>

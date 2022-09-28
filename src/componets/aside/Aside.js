@@ -1,8 +1,7 @@
 import React from 'react';
 import './aside.css';
-import userAvatar from './user-pic.jpg'
 
-const Aside = ({exerciseTime}) => {
+const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {
     return (
         <aside>
             {/* User Details Area */}
@@ -23,19 +22,19 @@ const Aside = ({exerciseTime}) => {
             <h5 className='mx-3'>Add A Break</h5>
             <div className='break-list d-flex justify-content-around align-items-center m-3 rounded-2'>
                 <div className='time-number'>
-                    <button>15s</button>
+                    <button onClick={breakTimeFunc}>15m</button>
                 </div>
                 <div className='time-number'>
-                    <button>20s</button>
+                    <button onClick={breakTimeFunc}>20m</button>
                 </div>
                 <div className='time-number'>
-                    <button>30s</button>
+                    <button onClick={breakTimeFunc}>30m</button>
                 </div>
                 <div className='time-number'>
-                    <button>35s</button>
+                    <button onClick={breakTimeFunc}>35m</button>
                 </div>
             </div>
-            
+
             {/* Exercise Details Area */}
             <h5 className='mx-3 mt-5'>Exercise Details</h5>
             {/* Input feild of Timer And Complete Button */}
@@ -45,7 +44,7 @@ const Aside = ({exerciseTime}) => {
             </div>
             <div className='exercise-time d-flex justify-content-between align-items-center h-100 mx-3 my-3 rounded-3'>
                 <p className='mb-0'><b className='px-2'>Break Time</b></p>
-                <p className='mb-0'><b className='px-2 fw-semibold'>0 Minutes</b></p>
+                <p className='mb-0'><b className='px-2 fw-semibold'>{breakTime} Minutes</b></p>
             </div>
             <div className='text-center mx-3 mt-5'>
                 <button className='complete-btn rounded-3'>Complete Mission</button>
