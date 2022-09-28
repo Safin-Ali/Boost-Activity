@@ -9,20 +9,18 @@ const Main = () => {
     useEffect(()=>{
         fetch('exercise.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setData(data))
     },[])
     return (
         <main>
-            <section className='row gx-5'>
+            <section className='row gx-5 justify-content-center mx-0'>
                 <div className="col-12 col-lg-9 card-area">
                 <Header></Header>
-                <div className='row gx-3'>
-                <div className="col-12 col-lg-9">
-                    <ExerciseList></ExerciseList>
+                <div className='row g-3'>
+                    {datas.map(data => <ExerciseList data={data} key={data.id}></ExerciseList>)}                    
                 </div>
-            </div>
                 </div>
-            <div className='col-12 col-lg-3'>
+            <div className='col-12 col-lg-3' style={{background:'#e5f0fa'}}>
                 <Aside></Aside>
             </div>
             </section>
