@@ -1,0 +1,58 @@
+aside {
+    background: #e5f0fa;
+    min-height: 100vh;
+    position: sticky;
+    right: 0;
+    top: 0;
+    padding: 20px 0;
+}
+.user-profile{
+    text-align: center;
+    color: #100F0F;
+    margin: 20px auto;
+}
+.user-profile .location-text{
+    margin: 10px 20px;
+    color: rgb(84, 89, 94);
+}
+.user-profile + p {
+    margin: 5px auto;
+}
+.user-avatar{
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: url(./user-pic2.jpg) top no-repeat;
+    background-size: cover;
+    outline: 2px solid #181818;
+}
+.user-info,.break-list,.exercise-time,.break-time{
+    background: #b1b1b1;
+}
+.user-info sub{
+    color: #c1d6ff;
+}
+.user-info h6{
+    font-weight: 400;
+}
+.break-list,.exercise-time,.break-time,.complete-btn{
+    padding: 10px 0;
+}
+.break-list .time-number {
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.break-list b {
+    font-size: 14px;
+}
+aside input:focus{
+    outline: none;
+}
+
+.complete-btn{
+    background-color: #e1e1e1;
+    border: none;
+    width: 100%;
+}

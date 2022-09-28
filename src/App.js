@@ -1,11 +1,8 @@
-import './App.css';
-import Header from './componets/header/Header';
+import './general.css';
 import Main from './componets/main/Main';
-
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
+    <div className="general">
       <Main></Main>
     </div>
   );

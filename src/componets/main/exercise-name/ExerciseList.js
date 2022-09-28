@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const GameList = () => {
+const ExerciseList = () => {
     return (
         <div className='row g-4'>
             <CardUI></CardUI>
@@ -17,17 +17,16 @@ function CardUI (props) {
                 <img src="" alt="Game Thumb" />
             </div>
             <div className="game-details">
-                <h2>Game Name</h2>
-                <p>Game Description</p>
-                <h4>Age : 18</h4>
+                <h2>Exercise Name</h2>
+                <p>Exercise Description</p>
                 <h4>Time Requirment</h4>
             </div>
             <div>
-                <button>Select Game</button>
+                <button>Select Exercise</button>
             </div>
         </div>   
     </div>
     )
 }
 
-export default GameList;
+export default ExerciseList;
