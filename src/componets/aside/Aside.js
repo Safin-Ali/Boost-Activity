@@ -1,11 +1,18 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './aside.css';
-
-const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {    
+const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {
     let breakTimeval = 0;
     const getLocaleStoreValue = localStorage.getItem('Break Time');
 
-    getLocaleStoreValue ? breakTimeval=parseInt(getLocaleStoreValue) : breakTimeval = 0;
+    const notify  = () => {
+        toast('Hello React', {
+            position: toast.POSITION.TOP_CENTER
+        });
+    }
+
+    getLocaleStoreValue ? breakTimeval=parseInt(getLocaleStoreValue) : breakTimeval = breakTime;
     return (
         <aside>
             {/* User Details Area */}
@@ -51,7 +58,8 @@ const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {
                 <p className='mb-0'><b className='px-2 fw-semibold'>{breakTimeval} Minutes</b></p>
             </div>
             <div className='text-center mx-3 mt-5'>
-                <button className='complete-btn rounded-3'>Complete Mission</button>
+                <button onClick={notify} className='complete-btn rounded-3'>Complete Mission</button>
+                <ToastContainer />
             </div>
 
         </aside>
