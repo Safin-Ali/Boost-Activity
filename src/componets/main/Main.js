@@ -23,6 +23,7 @@ const Main = () => {
     const handleBreakTime = event => {
         const getButtonValue = event.target.innerText;
         const cvrtInt = parseInt(getButtonValue)
+        localStorage.setItem('Break Time',cvrtInt)
         setBreakMint(cvrtInt);
     }
 

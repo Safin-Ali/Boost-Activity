@@ -1,7 +1,11 @@
 import React from 'react';
 import './aside.css';
 
-const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {
+const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {    
+    let breakTimeval = 0;
+    const getLocaleStoreValue = localStorage.getItem('Break Time');
+
+    getLocaleStoreValue ? breakTimeval=parseInt(getLocaleStoreValue) : breakTimeval = 0;
     return (
         <aside>
             {/* User Details Area */}
@@ -44,7 +48,7 @@ const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {
             </div>
             <div className='exercise-time d-flex justify-content-between align-items-center h-100 mx-3 my-3 rounded-3'>
                 <p className='mb-0'><b className='px-2'>Break Time</b></p>
-                <p className='mb-0'><b className='px-2 fw-semibold'>{breakTime} Minutes</b></p>
+                <p className='mb-0'><b className='px-2 fw-semibold'>{breakTimeval} Minutes</b></p>
             </div>
             <div className='text-center mx-3 mt-5'>
                 <button className='complete-btn rounded-3'>Complete Mission</button>
