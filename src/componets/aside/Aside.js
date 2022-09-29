@@ -30,7 +30,7 @@ const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {
             </div>
 
             {/* Break Times Selection Code */}
-            <h5 className='mx-3'>Add A Break</h5>
+            <h5 className='mx-3 text-center text-lg-start'>Add A Break</h5>
             <div className='break-list d-flex justify-content-around align-items-center m-3 rounded-2'>
                 <div className='time-number'>
                     <button onClick={breakTimeFunc}>15m</button>
@@ -47,7 +47,7 @@ const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {
             </div>
 
             {/* Exercise Details Area */}
-            <h5 className='mx-3 mt-5'>Exercise Details</h5>
+            <h5 className='mx-3 mt-5 text-center text-lg-start'>Exercise Details</h5>
             {/* Input feild of Timer And Complete Button */}
             <div className='exercise-time my-5 my-lg-0 d-flex justify-content-between align-items-center h-100 mx-3 my-3 rounded-3'>
                 <p className='mb-0'><b className='px-2'>Exercise Time</b></p>

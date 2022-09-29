@@ -41,7 +41,7 @@ const Main = () => {
                     {datas.map(data => <ExerciseList data={data} key={data.id} selFunc={handleExerciseTime}></ExerciseList>)}                    
                 </div>
                 </div>
-            <div className='col-12 col-lg-3' style={{background:'#F2F6f9',boxShadow:'0px 0px 20px -10px #00000060'}}>
+            <div className='col-12 col-lg-3 my-4 my-lg-0' style={{background:'#F2F6f9',boxShadow:'0px 0px 20px -10px #00000060'}}>
                 <Aside exerciseTime={exerMint} breakTimeFunc={handleBreakTime} breakTime={breakMint}></Aside>
             </div>
             </section>
