@@ -49,7 +49,7 @@ const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {
             {/* Exercise Details Area */}
             <h5 className='mx-3 mt-5'>Exercise Details</h5>
             {/* Input feild of Timer And Complete Button */}
-            <div className='exercise-time d-flex justify-content-between align-items-center h-100 mx-3 my-3 rounded-3'>
+            <div className='exercise-time my-5 my-lg-0 d-flex justify-content-between align-items-center h-100 mx-3 my-3 rounded-3'>
                 <p className='mb-0'><b className='px-2'>Exercise Time</b></p>
                 <p className='mb-0'><b className='px-2 fw-semibold'>{exerciseTime} Minutes</b></p>
             </div>

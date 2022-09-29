@@ -45,7 +45,7 @@ const Main = () => {
                 <Aside exerciseTime={exerMint} breakTimeFunc={handleBreakTime} breakTime={breakMint}></Aside>
             </div>
             </section>
-        </main>
+    </main>
     );
 };
 

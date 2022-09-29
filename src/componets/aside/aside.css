@@ -24,11 +24,11 @@ aside {
     border-radius: 50%;
     background: url(./user-pic2.jpg) top no-repeat;
     background-size: cover;
-    outline: 2px solid #181818;
+    box-shadow: 0px 0px 20px -10px #181818;
 }
 .user-info,.break-list,.exercise-time,.break-time{
     background: #f5fafc;
-    box-shadow: 0px 0px 20px -10px #00000070;
+    box-shadow: 0px 0px 20px -5px #00000070;
 }
 .user-info sub{
     color: #c1d6ff;
