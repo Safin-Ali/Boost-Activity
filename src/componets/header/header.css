@@ -1,9 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/oleo-script');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 
 .brand-logo img{
     max-width: 50px;
 }
 
 .brand-logo h1 {
-    font-family: 'Oleo Script', sans-serif;
+    font-family: 'Oleo Script', cursive;
 }
