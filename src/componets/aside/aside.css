@@ -12,7 +12,7 @@ aside {
 }
 .user-profile .location-text{
     margin: 10px 20px;
-    color: rgb(84, 89, 94);
+    color: #2b2b2b;
 }
 .user-profile + p {
     margin: 5px auto;
@@ -27,7 +27,8 @@ aside {
     outline: 2px solid #181818;
 }
 .user-info,.break-list,.exercise-time,.break-time{
-    background: #b1b1b1;
+    background: #f5fafc;
+    box-shadow: 0px 0px 20px -10px #00000070;
 }
 .user-info sub{
     color: #c1d6ff;
@@ -35,10 +36,14 @@ aside {
 .break-list,.exercise-time,.break-time,.complete-btn{
     padding: 10px 0;
 }
-.break-list .time-number {
-    background: #ffffff;
+.time-number {
+    background-color: #ffffff;
     border-radius: 50%;
     padding: 8px 1px;
+    transition: background-color 0.3s linear;
+}
+.time-number:hover{
+    background: #059862;
 }
 .break-list button {
     font-size: 14px;
@@ -50,7 +55,14 @@ aside input:focus{
 }
 
 .complete-btn{
-    background-color: #e1e1e1;
+    background-color: #324296;
     border: none;
     width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #f7f1f6;
+    transition: background-color .3s linear;
+}
+.complete-btn:hover{
+    background-color: #059862;
 }

@@ -10,10 +10,10 @@ const Aside = ({exerciseTime,breakTimeFunc,breakTime}) => {
                 <p className='location-text'><i className="fa-duotone fa-location-dot"></i> Pabna,Bangladesh</p>
             </div>
             <div className='d-flex justify-content-around align-items-center user-info m-3 rounded-2'>
-                <div className='py-1'>
-                    <h5>50<sub>Kg</sub> </h5>
+                <div className='py-2'>
+                    <h5>50<sub>kg</sub> </h5>
                 </div>
-                <div className='py-1'>
+                <div className='py-2'>
                     <h5>18<sub>yrs</sub></h5>
                 </div>
             </div>

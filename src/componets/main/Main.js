@@ -11,19 +11,19 @@ const Main = () => {
     // Get Exercise Minutes
     const [exerMint,setExerMint] = useState(0);
 
-    // Get Exercise Minutes
-    const [brakeMint,setBreakMint] = useState(0);
+    // Get Break Minutes
+    const [breakMint,setBreakMint] = useState(0);
 
     // Handle Exercise Time Function
     function handleExerciseTime (minutues) {
-        setExerMint(exerMint+minutues)
+        setExerMint(exerMint+minutues);
     }
 
     // Handle Break Time Function
     const handleBreakTime = event => {
         const getButtonValue = event.target.innerText;
         const cvrtInt = parseInt(getButtonValue)
-        return setBreakMint(cvrtInt);
+        setBreakMint(cvrtInt);
     }
 
     useEffect(()=>{
@@ -40,8 +40,8 @@ const Main = () => {
                     {datas.map(data => <ExerciseList data={data} key={data.id} selFunc={handleExerciseTime}></ExerciseList>)}                    
                 </div>
                 </div>
-            <div className='col-12 col-lg-3' style={{background:'#e5f0fa'}}>
-                <Aside exerciseTime={exerMint} breakTimeFunc={handleBreakTime} breakTime={brakeMint}></Aside>
+            <div className='col-12 col-lg-3' style={{background:'#F2F6f9',boxShadow:'0px 0px 20px -10px #00000060'}}>
+                <Aside exerciseTime={exerMint} breakTimeFunc={handleBreakTime} breakTime={breakMint}></Aside>
             </div>
             </section>
         </main>

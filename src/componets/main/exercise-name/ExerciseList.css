@@ -1,5 +1,5 @@
 .selectBtn{
-    background-color: #25316D;
+    background-color: #324296;
     width: 100%;
     border-radius: 5px;
     border: none;
@@ -10,5 +10,10 @@
 }
 
 .selectBtn:hover{
-    background-color: #126599;
+    background-color: #25316D;
+}
+
+.selectedbtn{
+    cursor: not-allowed;
+    background-color: #25316D;
 }
